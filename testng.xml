@@ -1,26 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" >
+
 	<listeners>
-		<listener class-name="resources.Listeners" />
+		<listener class-name="utility.ListenerClass" />
 	</listeners>
 
-	<test name="Validating User login">
+	<test name="test1">
 		<classes>
-			<class name="testCases.HomePage" />
+			<class name="testCases.LoginPageTest" />
 		</classes>
 	</test>
-
-	<test name="Validating title in the Page">
+	<test name="test2">
 		<classes>
-			<class name="testCases.validateTitle" />
+			<class name="testCases.OpdVisitForFreshPatient" />
 		</classes>
 	</test>
-
-	<test name="Validating navigation Bar">
+	
+	<test name="test3">
 		<classes>
-			<class name="testCases.validateNavigationBar" />
+			<class name="testCases.VerificationtillDasboard" />
 		</classes>
 	</test>
-
+	
+	<test name="test4">
+		<classes>
+			<class name="testCases.PatientRegistration" />
+		</classes>
+	</test>
+	
+	<test name="test5">
+		<classes>
+			<class name="testCases.PatientRegistrationfiledverification" />
+		</classes>
+	</test>
+	
+	<test name="test6">
+		<classes>
+			<class name="testCases.PatientSearch_btn" />
+		</classes>
+	</test>
+	
+	<test name="test8">
+		<classes>
+			<class name="testCases.TC_Advance_Receipt_011" />
+		</classes>
+	</test>
+	
+	<test name="test9">
+		<classes>
+			<class name="testCases.TC_Advance_Receipt_Modifications_13" />
+		</classes>
+	</test>
+	
+	<test name="test10">
+		<classes>
+			<class name="testCases.TC_MakeBillWithCashReceiptForFreshPatient_015" />
+		</classes>
+	</test>
+	
+	<test name="test11">
+		<classes>
+			<class name="testCases.TC_MakeBillWithOtherPaymentModeForFreshPatient_17" />
+		</classes>
+	</test>
 </suite> 

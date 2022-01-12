@@ -1,84 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="5" total="182" passed="171" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-10T13:18:30 IST" name="Suite" finished-at="2022-01-10T13:19:46 IST" duration-ms="76514">
+  <suite started-at="2022-01-12T18:07:32 IST" name="Suite" finished-at="2022-01-12T18:09:58 IST" duration-ms="146633">
     <groups>
     </groups>
-    <test started-at="2022-01-10T13:18:30 IST" name="Validating User login" finished-at="2022-01-10T13:19:13 IST" duration-ms="43471">
-      <class name="testCases.HomePage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:testCases.HomePage@72f46e16]" started-at="2022-01-10T13:18:30 IST" name="initialize" finished-at="2022-01-10T13:19:03 IST" duration-ms="32874" status="PASS">
+    <test started-at="2022-01-12T18:07:32 IST" name="test1" finished-at="2022-01-12T18:08:23 IST" duration-ms="51270">
+      <class name="testCases.LoginPageTest">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:07:32 IST" name="startApp" finished-at="2022-01-12T18:07:45 IST" duration-ms="13125" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.HomePage@72f46e16]" started-at="2022-01-10T13:19:03 IST" name="basePageNavigation" data-provider="getData" finished-at="2022-01-10T13:19:09 IST" duration-ms="6891" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonrestricteduser@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Restrcited User]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- startApp -->
+        <test-method signature="verifyApplicationTitle()[pri:1, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:07:45 IST" name="verifyApplicationTitle" finished-at="2022-01-12T18:07:45 IST" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.HomePage@72f46e16]" started-at="2022-01-10T13:19:09 IST" name="basePageNavigation" data-provider="getData" finished-at="2022-01-10T13:19:13 IST" duration-ms="3542" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[restricteduser@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[456788]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Non restricted user]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyApplicationTitle -->
+        <test-method signature="verifyFacebookPageTitle()[pri:2, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:07:45 IST" name="verifyFacebookPageTitle" finished-at="2022-01-12T18:07:52 IST" duration-ms="7233" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HomePage@72f46e16]" started-at="2022-01-10T13:19:13 IST" name="teardown" finished-at="2022-01-10T13:19:13 IST" duration-ms="95" status="PASS">
+        </test-method> <!-- verifyFacebookPageTitle -->
+        <test-method signature="verifyTwitterPageTitle()[pri:3, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:07:52 IST" name="verifyTwitterPageTitle" finished-at="2022-01-12T18:08:02 IST" duration-ms="9267" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.HomePage -->
-    </test> <!-- Validating User login -->
-    <test started-at="2022-01-10T13:19:14 IST" name="Validating title in the Page" finished-at="2022-01-10T13:19:27 IST" duration-ms="12859">
-      <class name="testCases.validateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:testCases.validateTitle@3f19b8b3]" started-at="2022-01-10T13:19:14 IST" name="initialize" finished-at="2022-01-10T13:19:26 IST" duration-ms="11961" status="PASS">
+        </test-method> <!-- verifyTwitterPageTitle -->
+        <test-method signature="verifyLinked_inPageTitle()[pri:5, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:08:02 IST" name="verifyLinked_inPageTitle" finished-at="2022-01-12T18:08:05 IST" duration-ms="3094" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="validateAppTitle()[pri:0, instance:testCases.validateTitle@3f19b8b3]" started-at="2022-01-10T13:19:26 IST" name="validateAppTitle" finished-at="2022-01-10T13:19:26 IST" duration-ms="35" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- verifyLinked_inPageTitle -->
+        <test-method signature="verifyInstagramPageTitle()[pri:6, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:08:05 IST" name="verifyInstagramPageTitle" finished-at="2022-01-12T18:08:10 IST" duration-ms="5424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInstagramPageTitle -->
+        <test-method signature="valid_Userid_Invalid_password()[pri:8, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:08:10 IST" name="valid_Userid_Invalid_password" finished-at="2022-01-12T18:08:10 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_Userid_Invalid_password -->
+        <test-method signature="invalid_Userid_valid_password()[pri:9, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:08:10 IST" name="invalid_Userid_valid_password" finished-at="2022-01-12T18:08:12 IST" duration-ms="1432" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[expected [FEATURED CO123URSES] but found [FEATURED COURSES]]]>
+              <![CDATA[element click intercepted: Element <a _ngcontent-unn-c165="" class="btn btn-danger btn-block btn-md" style="font-size: 0.9rem; font-weight: bold;">...</a> is not clickable at point (1082, 406). Other element would receive the click: <span class="mat-option-text">...</span>
+  (Session info: chrome=97.0.4692.71)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ECL-DSK-B02R542', ip: '192.168.1.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\REMOTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61184}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac07f27196fbb2cadd09c5d6e49f49ee]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [FEATURED CO123URSES] but found [FEATURED COURSES]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at testCases.validateTitle.validateAppTitle(validateTitle.java:43)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-unn-c165="" class="btn btn-danger btn-block btn-md" style="font-size: 0.9rem; font-weight: bold;">...</a> is not clickable at point (1082, 406). Other element would receive the click: <span class="mat-option-text">...</span>
+  (Session info: chrome=97.0.4692.71)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ECL-DSK-B02R542', ip: '192.168.1.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\REMOTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61184}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac07f27196fbb2cadd09c5d6e49f49ee
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy28.click(Unknown Source)
+at pageObjects.LandingPage.enterPassword(LandingPage.java:91)
+at testCases.LoginPageTest.invalid_Userid_valid_password(LoginPageTest.java:120)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,45 +89,1091 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_Userid_valid_password -->
+        <test-method signature="invalid_Userid_Invalid_password()[pri:10, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:08:12 IST" name="invalid_Userid_Invalid_password" finished-at="2022-01-12T18:08:13 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_Userid_Invalid_password -->
+        <test-method signature="Blank_Userid_Blank_password()[pri:11, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:08:13 IST" name="Blank_Userid_Blank_password" finished-at="2022-01-12T18:08:13 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blank_Userid_Blank_password -->
+        <test-method signature="valid_Userid_valid_password()[pri:12, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:08:13 IST" name="valid_Userid_valid_password" finished-at="2022-01-12T18:08:14 IST" duration-ms="691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_Userid_valid_password -->
+        <test-method is-config="true" signature="goToLoginpage()[pri:0, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:08:14 IST" name="goToLoginpage" finished-at="2022-01-12T18:08:16 IST" duration-ms="2650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginpage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginPageTest@2c715e84]" started-at="2022-01-12T18:08:16 IST" name="tearDown" finished-at="2022-01-12T18:08:23 IST" duration-ms="6748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.LoginPageTest -->
+    </test> <!-- test1 -->
+    <test started-at="2022-01-12T18:07:32 IST" name="test2" finished-at="2022-01-12T18:08:38 IST" duration-ms="66362">
+      <class name="testCases.OpdVisitForFreshPatient">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:testCases.OpdVisitForFreshPatient@7072bc39]" started-at="2022-01-12T18:07:32 IST" name="startApp" finished-at="2022-01-12T18:07:44 IST" duration-ms="12626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="New_Patient_Registration()[pri:1, instance:testCases.OpdVisitForFreshPatient@7072bc39]" started-at="2022-01-12T18:07:44 IST" name="New_Patient_Registration" description="Patient Registration" finished-at="2022-01-12T18:08:28 IST" duration-ms="43613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- New_Patient_Registration -->
+        <test-method signature="patient_appointment_walkin()[pri:2, instance:testCases.OpdVisitForFreshPatient@7072bc39]" started-at="2022-01-12T18:08:28 IST" name="patient_appointment_walkin" description="Patient Appointment with walkin" finished-at="2022-01-12T18:08:30 IST" duration-ms="2241" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ECL-DSK-B02R542', ip: '192.168.1.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\REMOTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 494bea29b4e1ce99ae083389461a45c6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ECL-DSK-B02R542', ip: '192.168.1.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\REMOTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 494bea29b4e1ce99ae083389461a45c6
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy28.getText(Unknown Source)
+at pageObjects.OpdVisitPage.getselepatient(OpdVisitPage.java:57)
+at testCases.OpdVisitForFreshPatient.patient_appointment_walkin(OpdVisitForFreshPatient.java:234)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patient_appointment_walkin -->
+        <test-method is-config="true" signature="goToLoginpage()[pri:0, instance:testCases.OpdVisitForFreshPatient@7072bc39]" started-at="2022-01-12T18:08:31 IST" name="goToLoginpage" finished-at="2022-01-12T18:08:34 IST" duration-ms="3104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginpage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.OpdVisitForFreshPatient@7072bc39]" started-at="2022-01-12T18:08:34 IST" name="tearDown" finished-at="2022-01-12T18:08:38 IST" duration-ms="4515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.OpdVisitForFreshPatient -->
+    </test> <!-- test2 -->
+    <test started-at="2022-01-12T18:07:32 IST" name="test5" finished-at="2022-01-12T18:08:44 IST" duration-ms="72274">
+      <class name="testCases.PatientRegistrationfiledverification">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:07:32 IST" name="startApp" finished-at="2022-01-12T18:07:48 IST" duration-ms="16450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="New_Patient_Registration()[pri:1, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:07:48 IST" name="New_Patient_Registration" description="Patient Registration" finished-at="2022-01-12T18:08:35 IST" duration-ms="46218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- New_Patient_Registration -->
+        <test-method signature="initialmatches()[pri:2, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:35 IST" name="initialmatches" finished-at="2022-01-12T18:08:35 IST" duration-ms="58" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Intial is not matched expected [] but found [Mrs.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Intial is not matched expected [] but found [Mrs.]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testCases.PatientRegistrationfiledverification.initialmatches(PatientRegistrationfiledverification.java:282)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateAppTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.validateTitle@3f19b8b3]" started-at="2022-01-10T13:19:27 IST" name="teardown" finished-at="2022-01-10T13:19:27 IST" duration-ms="74" status="PASS">
+        </test-method> <!-- initialmatches -->
+        <test-method signature="fistnamematches()[pri:3, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:35 IST" name="fistnamematches" finished-at="2022-01-12T18:08:35 IST" duration-ms="145" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.validateTitle -->
-    </test> <!-- Validating title in the Page -->
-    <test started-at="2022-01-10T13:19:27 IST" name="Validating navigation Bar" finished-at="2022-01-10T13:19:46 IST" duration-ms="19295">
-      <class name="testCases.validateNavigationBar">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:testCases.validateNavigationBar@21526f6c]" started-at="2022-01-10T13:19:27 IST" name="initialize" finished-at="2022-01-10T13:19:45 IST" duration-ms="17879" status="PASS">
+        </test-method> <!-- fistnamematches -->
+        <test-method signature="lastnamematches()[pri:4, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:35 IST" name="lastnamematches" finished-at="2022-01-12T18:08:35 IST" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="validateAppNavBar()[pri:0, instance:testCases.validateNavigationBar@21526f6c]" started-at="2022-01-10T13:19:45 IST" name="validateAppNavBar" finished-at="2022-01-10T13:19:45 IST" duration-ms="69" status="PASS">
+        </test-method> <!-- lastnamematches -->
+        <test-method signature="uhidmatches()[pri:5, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:35 IST" name="uhidmatches" finished-at="2022-01-12T18:08:35 IST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateAppNavBar -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.validateNavigationBar@21526f6c]" started-at="2022-01-10T13:19:45 IST" name="teardown" finished-at="2022-01-10T13:19:46 IST" duration-ms="1343" status="PASS">
+        </test-method> <!-- uhidmatches -->
+        <test-method signature="cotypematches()[pri:6, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:35 IST" name="cotypematches" finished-at="2022-01-12T18:08:35 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.validateNavigationBar -->
-    </test> <!-- Validating navigation Bar -->
+        </test-method> <!-- cotypematches -->
+        <test-method signature="conamematches()[pri:7, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:35 IST" name="conamematches" finished-at="2022-01-12T18:08:36 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- conamematches -->
+        <test-method signature="phonematches()[pri:8, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="phonematches" finished-at="2022-01-12T18:08:36 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phonematches -->
+        <test-method signature="mobilenomatches()[pri:9, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="mobilenomatches" finished-at="2022-01-12T18:08:36 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilenomatches -->
+        <test-method signature="emergencymatches()[pri:10, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="emergencymatches" finished-at="2022-01-12T18:08:36 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emergencymatches -->
+        <test-method signature="person_name_matches()[pri:11, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="person_name_matches" finished-at="2022-01-12T18:08:36 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- person_name_matches -->
+        <test-method signature="emailmatches()[pri:12, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="emailmatches" finished-at="2022-01-12T18:08:36 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailmatches -->
+        <test-method signature="yearmatches()[pri:13, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="yearmatches" finished-at="2022-01-12T18:08:36 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yearmatches -->
+        <test-method signature="monthmatches()[pri:14, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="monthmatches" finished-at="2022-01-12T18:08:36 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- monthmatches -->
+        <test-method signature="daymatches()[pri:15, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="daymatches" finished-at="2022-01-12T18:08:36 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- daymatches -->
+        <test-method signature="permanentadressmatches()[pri:16, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="permanentadressmatches" finished-at="2022-01-12T18:08:36 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentadressmatches -->
+        <test-method signature="permanentpinmatches()[pri:17, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="permanentpinmatches" finished-at="2022-01-12T18:08:36 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentpinmatches -->
+        <test-method signature="permanentcountrymatches()[pri:18, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="permanentcountrymatches" finished-at="2022-01-12T18:08:36 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentcountrymatches -->
+        <test-method signature="permanentstatematches()[pri:19, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="permanentstatematches" finished-at="2022-01-12T18:08:36 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentstatematches -->
+        <test-method signature="permanentcitymatches()[pri:21, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="permanentcitymatches" finished-at="2022-01-12T18:08:36 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentcitymatches -->
+        <test-method signature="permanentareamatches()[pri:22, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="permanentareamatches" finished-at="2022-01-12T18:08:36 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentareamatches -->
+        <test-method signature="localaddressmatches()[pri:23, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:36 IST" name="localaddressmatches" finished-at="2022-01-12T18:08:37 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localaddressmatches -->
+        <test-method signature="localpinmatches()[pri:24, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:37 IST" name="localpinmatches" finished-at="2022-01-12T18:08:37 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localpinmatches -->
+        <test-method signature="localcountrymatches()[pri:25, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:37 IST" name="localcountrymatches" finished-at="2022-01-12T18:08:37 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localcountrymatches -->
+        <test-method signature="localstatematches()[pri:26, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:37 IST" name="localstatematches" finished-at="2022-01-12T18:08:37 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localstatematches -->
+        <test-method signature="localdistrictmatches()[pri:27, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:37 IST" name="localdistrictmatches" finished-at="2022-01-12T18:08:37 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localdistrictmatches -->
+        <test-method signature="localcitymatches()[pri:28, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:37 IST" name="localcitymatches" finished-at="2022-01-12T18:08:37 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localcitymatches -->
+        <test-method signature="localareamatches()[pri:29, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:37 IST" name="localareamatches" finished-at="2022-01-12T18:08:37 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localareamatches -->
+        <test-method signature="clicktotherinformaiontab()[pri:30, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:37 IST" name="clicktotherinformaiontab" finished-at="2022-01-12T18:08:37 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clicktotherinformaiontab -->
+        <test-method signature="groupmatches()[pri:31, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:37 IST" name="groupmatches" finished-at="2022-01-12T18:08:37 IST" duration-ms="40" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Group is not matched expected [Eye Exam] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Group is not matched expected [Eye Exam] but found []
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testCases.PatientRegistrationfiledverification.groupmatches(PatientRegistrationfiledverification.java:556)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupmatches -->
+        <test-method signature="marritalstatusmatches()[pri:32, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:37 IST" name="marritalstatusmatches" finished-at="2022-01-12T18:08:37 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marritalstatusmatches -->
+        <test-method signature="partynamematches()[pri:33, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:37 IST" name="partynamematches" finished-at="2022-01-12T18:08:38 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- partynamematches -->
+        <test-method signature="mothernamematches()[pri:34, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="mothernamematches" finished-at="2022-01-12T18:08:38 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mothernamematches -->
+        <test-method signature="nationalitymatches()[pri:35, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="nationalitymatches" finished-at="2022-01-12T18:08:38 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nationalitymatches -->
+        <test-method signature="sapmatches()[pri:36, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="sapmatches" finished-at="2022-01-12T18:08:38 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sapmatches -->
+        <test-method signature="faxnumbermatches()[pri:37, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="faxnumbermatches" finished-at="2022-01-12T18:08:38 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- faxnumbermatches -->
+        <test-method signature="bloodgroupmatches()[pri:38, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="bloodgroupmatches" finished-at="2022-01-12T18:08:38 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bloodgroupmatches -->
+        <test-method signature="languagematches()[pri:39, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="languagematches" finished-at="2022-01-12T18:08:38 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- languagematches -->
+        <test-method signature="religionmatches()[pri:40, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="religionmatches" finished-at="2022-01-12T18:08:38 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- religionmatches -->
+        <test-method signature="occupationmatches()[pri:41, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="occupationmatches" finished-at="2022-01-12T18:08:38 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- occupationmatches -->
+        <test-method signature="sourcematches()[pri:42, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="sourcematches" finished-at="2022-01-12T18:08:38 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sourcematches -->
+        <test-method signature="adharmatches()[pri:43, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="adharmatches" finished-at="2022-01-12T18:08:38 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adharmatches -->
+        <test-method signature="passportmatches()[pri:44, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="passportmatches" finished-at="2022-01-12T18:08:38 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passportmatches -->
+        <test-method signature="isbplmatches()[pri:45, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="isbplmatches" finished-at="2022-01-12T18:08:38 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isbplmatches -->
+        <test-method signature="istriblematches()[pri:46, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="istriblematches" finished-at="2022-01-12T18:08:38 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- istriblematches -->
+        <test-method signature="isdisablematches()[pri:48, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="isdisablematches" finished-at="2022-01-12T18:08:38 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isdisablematches -->
+        <test-method signature="disablepercentmatches()[pri:49, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="disablepercentmatches" finished-at="2022-01-12T18:08:38 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disablepercentmatches -->
+        <test-method signature="isvipmatches()[pri:50, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="isvipmatches" finished-at="2022-01-12T18:08:38 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isvipmatches -->
+        <test-method signature="Viptypematches()[pri:51, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:38 IST" name="Viptypematches" finished-at="2022-01-12T18:08:39 IST" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Viptypematches -->
+        <test-method signature="remarksmatches()[pri:52, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:39 IST" name="remarksmatches" finished-at="2022-01-12T18:08:39 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remarksmatches -->
+        <test-method is-config="true" signature="goToLoginpage()[pri:0, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:39 IST" name="goToLoginpage" finished-at="2022-01-12T18:08:41 IST" duration-ms="2631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginpage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.PatientRegistrationfiledverification@3e587920]" started-at="2022-01-12T18:08:41 IST" name="tearDown" finished-at="2022-01-12T18:08:44 IST" duration-ms="2794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.PatientRegistrationfiledverification -->
+    </test> <!-- test5 -->
+    <test started-at="2022-01-12T18:07:32 IST" name="test3" finished-at="2022-01-12T18:08:45 IST" duration-ms="72837">
+      <class name="testCases.VerificationtillDasboard">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:07:32 IST" name="startApp" finished-at="2022-01-12T18:07:43 IST" duration-ms="11236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="New_Patient_Registration()[pri:1, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:07:43 IST" name="New_Patient_Registration" description="Patient Registration" finished-at="2022-01-12T18:08:31 IST" duration-ms="48171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- New_Patient_Registration -->
+        <test-method signature="initialmatches()[pri:2, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:31 IST" name="initialmatches" finished-at="2022-01-12T18:08:32 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialmatches -->
+        <test-method signature="fistnamematches()[pri:3, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="fistnamematches" finished-at="2022-01-12T18:08:32 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fistnamematches -->
+        <test-method signature="lastnamematches()[pri:4, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="lastnamematches" finished-at="2022-01-12T18:08:32 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastnamematches -->
+        <test-method signature="uhidmatches()[pri:5, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="uhidmatches" finished-at="2022-01-12T18:08:32 IST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uhidmatches -->
+        <test-method signature="cotypematches()[pri:6, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="cotypematches" finished-at="2022-01-12T18:08:32 IST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cotypematches -->
+        <test-method signature="conamematches()[pri:7, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="conamematches" finished-at="2022-01-12T18:08:32 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- conamematches -->
+        <test-method signature="phonematches()[pri:8, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="phonematches" finished-at="2022-01-12T18:08:32 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phonematches -->
+        <test-method signature="mobilenomatches()[pri:9, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="mobilenomatches" finished-at="2022-01-12T18:08:32 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilenomatches -->
+        <test-method signature="emergencymatches()[pri:10, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="emergencymatches" finished-at="2022-01-12T18:08:32 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emergencymatches -->
+        <test-method signature="person_name_matches()[pri:11, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="person_name_matches" finished-at="2022-01-12T18:08:32 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- person_name_matches -->
+        <test-method signature="emailmatches()[pri:12, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="emailmatches" finished-at="2022-01-12T18:08:32 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailmatches -->
+        <test-method signature="yearmatches()[pri:13, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="yearmatches" finished-at="2022-01-12T18:08:32 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yearmatches -->
+        <test-method signature="monthmatches()[pri:14, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="monthmatches" finished-at="2022-01-12T18:08:32 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- monthmatches -->
+        <test-method signature="daymatches()[pri:15, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="daymatches" finished-at="2022-01-12T18:08:32 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- daymatches -->
+        <test-method signature="permanentadressmatches()[pri:16, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="permanentadressmatches" finished-at="2022-01-12T18:08:32 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentadressmatches -->
+        <test-method signature="permanentpinmatches()[pri:17, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:32 IST" name="permanentpinmatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentpinmatches -->
+        <test-method signature="permanentcountrymatches()[pri:18, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="permanentcountrymatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentcountrymatches -->
+        <test-method signature="permanentstatematches()[pri:19, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="permanentstatematches" finished-at="2022-01-12T18:08:33 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentstatematches -->
+        <test-method signature="permanentcitymatches()[pri:21, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="permanentcitymatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentcitymatches -->
+        <test-method signature="permanentareamatches()[pri:22, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="permanentareamatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentareamatches -->
+        <test-method signature="localaddressmatches()[pri:23, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="localaddressmatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localaddressmatches -->
+        <test-method signature="localpinmatches()[pri:24, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="localpinmatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localpinmatches -->
+        <test-method signature="localcountrymatches()[pri:25, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="localcountrymatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localcountrymatches -->
+        <test-method signature="localstatematches()[pri:26, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="localstatematches" finished-at="2022-01-12T18:08:33 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localstatematches -->
+        <test-method signature="localdistrictmatches()[pri:27, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="localdistrictmatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localdistrictmatches -->
+        <test-method signature="localcitymatches()[pri:28, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="localcitymatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localcitymatches -->
+        <test-method signature="localareamatches()[pri:29, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="localareamatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localareamatches -->
+        <test-method signature="clicktotherinformaiontab()[pri:30, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="clicktotherinformaiontab" finished-at="2022-01-12T18:08:33 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clicktotherinformaiontab -->
+        <test-method signature="groupmatches()[pri:31, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="groupmatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="46" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Group is not matched expected [Eye Exam] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Group is not matched expected [Eye Exam] but found []
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testCases.VerificationtillDasboard.groupmatches(VerificationtillDasboard.java:554)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupmatches -->
+        <test-method signature="marritalstatusmatches()[pri:32, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="marritalstatusmatches" finished-at="2022-01-12T18:08:33 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marritalstatusmatches -->
+        <test-method signature="partynamematches()[pri:33, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:33 IST" name="partynamematches" finished-at="2022-01-12T18:08:34 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- partynamematches -->
+        <test-method signature="mothernamematches()[pri:34, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="mothernamematches" finished-at="2022-01-12T18:08:34 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mothernamematches -->
+        <test-method signature="nationalitymatches()[pri:35, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="nationalitymatches" finished-at="2022-01-12T18:08:34 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nationalitymatches -->
+        <test-method signature="sapmatches()[pri:36, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="sapmatches" finished-at="2022-01-12T18:08:34 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sapmatches -->
+        <test-method signature="faxnumbermatches()[pri:37, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="faxnumbermatches" finished-at="2022-01-12T18:08:34 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- faxnumbermatches -->
+        <test-method signature="bloodgroupmatches()[pri:38, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="bloodgroupmatches" finished-at="2022-01-12T18:08:34 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bloodgroupmatches -->
+        <test-method signature="languagematches()[pri:39, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="languagematches" finished-at="2022-01-12T18:08:34 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- languagematches -->
+        <test-method signature="religionmatches()[pri:40, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="religionmatches" finished-at="2022-01-12T18:08:34 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- religionmatches -->
+        <test-method signature="occupationmatches()[pri:41, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="occupationmatches" finished-at="2022-01-12T18:08:34 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- occupationmatches -->
+        <test-method signature="sourcematches()[pri:42, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="sourcematches" finished-at="2022-01-12T18:08:34 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sourcematches -->
+        <test-method signature="adharmatches()[pri:43, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="adharmatches" finished-at="2022-01-12T18:08:34 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adharmatches -->
+        <test-method signature="passportmatches()[pri:44, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="passportmatches" finished-at="2022-01-12T18:08:34 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passportmatches -->
+        <test-method signature="isbplmatches()[pri:45, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="isbplmatches" finished-at="2022-01-12T18:08:34 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isbplmatches -->
+        <test-method signature="istriblematches()[pri:46, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="istriblematches" finished-at="2022-01-12T18:08:34 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- istriblematches -->
+        <test-method signature="isdisablematches()[pri:48, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="isdisablematches" finished-at="2022-01-12T18:08:34 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isdisablematches -->
+        <test-method signature="disablepercentmatches()[pri:49, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="disablepercentmatches" finished-at="2022-01-12T18:08:34 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disablepercentmatches -->
+        <test-method signature="isvipmatches()[pri:50, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="isvipmatches" finished-at="2022-01-12T18:08:34 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isvipmatches -->
+        <test-method signature="Viptypematches()[pri:51, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:34 IST" name="Viptypematches" finished-at="2022-01-12T18:08:35 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Viptypematches -->
+        <test-method signature="remarksmatches()[pri:52, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:35 IST" name="remarksmatches" finished-at="2022-01-12T18:08:35 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remarksmatches -->
+        <test-method signature="patient_appointment_walkin()[pri:53, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:35 IST" name="patient_appointment_walkin" description="Patient Appointment with walkin" finished-at="2022-01-12T18:08:41 IST" duration-ms="6615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patient_appointment_walkin -->
+        <test-method is-config="true" signature="goToLoginpage()[pri:0, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:41 IST" name="goToLoginpage" finished-at="2022-01-12T18:08:44 IST" duration-ms="2568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginpage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.VerificationtillDasboard@51650883]" started-at="2022-01-12T18:08:44 IST" name="tearDown" finished-at="2022-01-12T18:08:45 IST" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.VerificationtillDasboard -->
+    </test> <!-- test3 -->
+    <test started-at="2022-01-12T18:07:32 IST" name="test4" finished-at="2022-01-12T18:08:54 IST" duration-ms="81707">
+      <class name="testCases.PatientRegistration">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:testCases.PatientRegistration@c1fca1e]" started-at="2022-01-12T18:07:32 IST" name="startApp" finished-at="2022-01-12T18:07:46 IST" duration-ms="13918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="New_Patient_Registration()[pri:1, instance:testCases.PatientRegistration@c1fca1e]" started-at="2022-01-12T18:07:46 IST" name="New_Patient_Registration" description="Patient Registration" finished-at="2022-01-12T18:08:46 IST" duration-ms="60380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- New_Patient_Registration -->
+        <test-method is-config="true" signature="goToLoginpage()[pri:0, instance:testCases.PatientRegistration@c1fca1e]" started-at="2022-01-12T18:08:46 IST" name="goToLoginpage" finished-at="2022-01-12T18:08:49 IST" duration-ms="2670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginpage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.PatientRegistration@c1fca1e]" started-at="2022-01-12T18:08:49 IST" name="tearDown" finished-at="2022-01-12T18:08:54 IST" duration-ms="4730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.PatientRegistration -->
+    </test> <!-- test4 -->
+    <test started-at="2022-01-12T18:08:24 IST" name="test6" finished-at="2022-01-12T18:09:31 IST" duration-ms="67804">
+      <class name="testCases.PatientSearch_btn">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:08:24 IST" name="startApp" finished-at="2022-01-12T18:08:38 IST" duration-ms="14030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="New_Patient_Registration()[pri:1, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:08:38 IST" name="New_Patient_Registration" description="Patient Registration" finished-at="2022-01-12T18:09:24 IST" duration-ms="46201" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <mat-icon _ngcontent-pns-c186="" role="img" class="mat-icon notranslate example-tab-icon-clicked pageicon material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">...</mat-icon> is not clickable at point (622, 133). Other element would receive the click: <div _ngcontent-pns-c186="" class="padding-bottom-9px">...</div>
+  (Session info: chrome=97.0.4692.71)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ECL-DSK-B02R542', ip: '192.168.1.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\REMOTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5959496b4ed7f13706eb8bdbe1c934c2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <mat-icon _ngcontent-pns-c186="" role="img" class="mat-icon notranslate example-tab-icon-clicked pageicon material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">...</mat-icon> is not clickable at point (622, 133). Other element would receive the click: <div _ngcontent-pns-c186="" class="padding-bottom-9px">...</div>
+  (Session info: chrome=97.0.4692.71)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ECL-DSK-B02R542', ip: '192.168.1.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\REMOTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5959496b4ed7f13706eb8bdbe1c934c2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy28.click(Unknown Source)
+at pageObjects.PatientRegistrationPage.patientseacrhbtn(PatientRegistrationPage.java:1262)
+at testCases.PatientSearch_btn.New_Patient_Registration(PatientSearch_btn.java:273)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- New_Patient_Registration -->
+        <test-method signature="initialmatches()[pri:2, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:24 IST" name="initialmatches" finished-at="2022-01-12T18:09:24 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialmatches -->
+        <test-method signature="fistnamematches()[pri:3, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:24 IST" name="fistnamematches" finished-at="2022-01-12T18:09:24 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fistnamematches -->
+        <test-method signature="lastnamematches()[pri:4, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:24 IST" name="lastnamematches" finished-at="2022-01-12T18:09:24 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastnamematches -->
+        <test-method signature="uhidmatches()[pri:5, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:24 IST" name="uhidmatches" finished-at="2022-01-12T18:09:24 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uhidmatches -->
+        <test-method signature="cotypematches()[pri:6, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:24 IST" name="cotypematches" finished-at="2022-01-12T18:09:24 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cotypematches -->
+        <test-method signature="conamematches()[pri:7, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:24 IST" name="conamematches" finished-at="2022-01-12T18:09:24 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- conamematches -->
+        <test-method signature="phonematches()[pri:8, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:24 IST" name="phonematches" finished-at="2022-01-12T18:09:24 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phonematches -->
+        <test-method signature="mobilenomatches()[pri:9, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:24 IST" name="mobilenomatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilenomatches -->
+        <test-method signature="emergencymatches()[pri:10, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="emergencymatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emergencymatches -->
+        <test-method signature="person_name_matches()[pri:11, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="person_name_matches" finished-at="2022-01-12T18:09:25 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- person_name_matches -->
+        <test-method signature="emailmatches()[pri:12, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="emailmatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailmatches -->
+        <test-method signature="yearmatches()[pri:13, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="yearmatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yearmatches -->
+        <test-method signature="monthmatches()[pri:14, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="monthmatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- monthmatches -->
+        <test-method signature="daymatches()[pri:15, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="daymatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- daymatches -->
+        <test-method signature="permanentadressmatches()[pri:16, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="permanentadressmatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentadressmatches -->
+        <test-method signature="permanentpinmatches()[pri:17, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="permanentpinmatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentpinmatches -->
+        <test-method signature="permanentcountrymatches()[pri:18, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="permanentcountrymatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentcountrymatches -->
+        <test-method signature="permanentstatematches()[pri:19, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="permanentstatematches" finished-at="2022-01-12T18:09:25 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentstatematches -->
+        <test-method signature="permanentcitymatches()[pri:21, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="permanentcitymatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentcitymatches -->
+        <test-method signature="permanentareamatches()[pri:22, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="permanentareamatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- permanentareamatches -->
+        <test-method signature="localaddressmatches()[pri:23, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="localaddressmatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localaddressmatches -->
+        <test-method signature="localpinmatches()[pri:24, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="localpinmatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localpinmatches -->
+        <test-method signature="localcountrymatches()[pri:25, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="localcountrymatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localcountrymatches -->
+        <test-method signature="localstatematches()[pri:26, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="localstatematches" finished-at="2022-01-12T18:09:25 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localstatematches -->
+        <test-method signature="localdistrictmatches()[pri:27, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="localdistrictmatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localdistrictmatches -->
+        <test-method signature="localcitymatches()[pri:28, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="localcitymatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localcitymatches -->
+        <test-method signature="localareamatches()[pri:29, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="localareamatches" finished-at="2022-01-12T18:09:25 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localareamatches -->
+        <test-method signature="clicktotherinformaiontab()[pri:30, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:25 IST" name="clicktotherinformaiontab" finished-at="2022-01-12T18:09:26 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clicktotherinformaiontab -->
+        <test-method signature="groupmatches()[pri:31, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="groupmatches" finished-at="2022-01-12T18:09:26 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupmatches -->
+        <test-method signature="marritalstatusmatches()[pri:32, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="marritalstatusmatches" finished-at="2022-01-12T18:09:26 IST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marritalstatusmatches -->
+        <test-method signature="partynamematches()[pri:33, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="partynamematches" finished-at="2022-01-12T18:09:26 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- partynamematches -->
+        <test-method signature="mothernamematches()[pri:34, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="mothernamematches" finished-at="2022-01-12T18:09:26 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mothernamematches -->
+        <test-method signature="nationalitymatches()[pri:35, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="nationalitymatches" finished-at="2022-01-12T18:09:26 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nationalitymatches -->
+        <test-method signature="sapmatches()[pri:36, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="sapmatches" finished-at="2022-01-12T18:09:26 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sapmatches -->
+        <test-method signature="faxnumbermatches()[pri:37, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="faxnumbermatches" finished-at="2022-01-12T18:09:26 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- faxnumbermatches -->
+        <test-method signature="bloodgroupmatches()[pri:38, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="bloodgroupmatches" finished-at="2022-01-12T18:09:26 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bloodgroupmatches -->
+        <test-method signature="languagematches()[pri:39, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="languagematches" finished-at="2022-01-12T18:09:26 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- languagematches -->
+        <test-method signature="religionmatches()[pri:40, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="religionmatches" finished-at="2022-01-12T18:09:26 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- religionmatches -->
+        <test-method signature="occupationmatches()[pri:41, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="occupationmatches" finished-at="2022-01-12T18:09:26 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- occupationmatches -->
+        <test-method signature="sourcematches()[pri:42, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="sourcematches" finished-at="2022-01-12T18:09:26 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sourcematches -->
+        <test-method signature="adharmatches()[pri:43, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="adharmatches" finished-at="2022-01-12T18:09:26 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adharmatches -->
+        <test-method signature="passportmatches()[pri:44, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:26 IST" name="passportmatches" finished-at="2022-01-12T18:09:27 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passportmatches -->
+        <test-method signature="isbplmatches()[pri:45, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:27 IST" name="isbplmatches" finished-at="2022-01-12T18:09:27 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isbplmatches -->
+        <test-method signature="istriblematches()[pri:46, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:27 IST" name="istriblematches" finished-at="2022-01-12T18:09:27 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- istriblematches -->
+        <test-method signature="isdisablematches()[pri:48, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:27 IST" name="isdisablematches" finished-at="2022-01-12T18:09:27 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isdisablematches -->
+        <test-method signature="disablepercentmatches()[pri:49, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:27 IST" name="disablepercentmatches" finished-at="2022-01-12T18:09:27 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disablepercentmatches -->
+        <test-method signature="isvipmatches()[pri:50, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:27 IST" name="isvipmatches" finished-at="2022-01-12T18:09:27 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isvipmatches -->
+        <test-method signature="Viptypematches()[pri:51, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:27 IST" name="Viptypematches" finished-at="2022-01-12T18:09:27 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Viptypematches -->
+        <test-method signature="remarksmatches()[pri:52, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:27 IST" name="remarksmatches" finished-at="2022-01-12T18:09:27 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remarksmatches -->
+        <test-method is-config="true" signature="goToLoginpage()[pri:0, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:27 IST" name="goToLoginpage" finished-at="2022-01-12T18:09:29 IST" duration-ms="2665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginpage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.PatientSearch_btn@7957dc72]" started-at="2022-01-12T18:09:29 IST" name="tearDown" finished-at="2022-01-12T18:09:31 IST" duration-ms="1875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.PatientSearch_btn -->
+    </test> <!-- test6 -->
+    <test started-at="2022-01-12T18:08:45 IST" name="test10" finished-at="2022-01-12T18:09:48 IST" duration-ms="63630">
+      <class name="testCases.TC_MakeBillWithCashReceiptForFreshPatient_015">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:testCases.TC_MakeBillWithCashReceiptForFreshPatient_015@65f87a2c]" started-at="2022-01-12T18:08:45 IST" name="startApp" finished-at="2022-01-12T18:08:55 IST" duration-ms="10302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="New_Patient_Registration()[pri:1, instance:testCases.TC_MakeBillWithCashReceiptForFreshPatient_015@65f87a2c]" started-at="2022-01-12T18:08:55 IST" name="New_Patient_Registration" description="Patient Registration" finished-at="2022-01-12T18:09:36 IST" duration-ms="40908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- New_Patient_Registration -->
+        <test-method signature="MakeBillwithCash()[pri:2, instance:testCases.TC_MakeBillWithCashReceiptForFreshPatient_015@65f87a2c]" started-at="2022-01-12T18:09:36 IST" name="MakeBillwithCash" description="Make Bill with cash amount" finished-at="2022-01-12T18:09:42 IST" duration-ms="6128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MakeBillwithCash -->
+        <test-method signature="verifyBillReceiptAmount()[pri:3, instance:testCases.TC_MakeBillWithCashReceiptForFreshPatient_015@65f87a2c]" started-at="2022-01-12T18:09:42 IST" name="verifyBillReceiptAmount" description="Verify created Cash receipt" finished-at="2022-01-12T18:09:45 IST" duration-ms="3051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBillReceiptAmount -->
+        <test-method is-config="true" signature="goToLoginpage()[pri:0, instance:testCases.TC_MakeBillWithCashReceiptForFreshPatient_015@65f87a2c]" started-at="2022-01-12T18:09:45 IST" name="goToLoginpage" finished-at="2022-01-12T18:09:48 IST" duration-ms="2851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginpage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_MakeBillWithCashReceiptForFreshPatient_015@65f87a2c]" started-at="2022-01-12T18:09:48 IST" name="tearDown" finished-at="2022-01-12T18:09:48 IST" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_MakeBillWithCashReceiptForFreshPatient_015 -->
+    </test> <!-- test10 -->
+    <test started-at="2022-01-12T18:08:38 IST" name="test8" finished-at="2022-01-12T18:09:50 IST" duration-ms="71447">
+      <class name="testCases.TC_Advance_Receipt_011">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:testCases.TC_Advance_Receipt_011@5ea502e0]" started-at="2022-01-12T18:08:38 IST" name="startApp" finished-at="2022-01-12T18:08:50 IST" duration-ms="11600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="New_Patient_Registration()[pri:1, instance:testCases.TC_Advance_Receipt_011@5ea502e0]" started-at="2022-01-12T18:08:50 IST" name="New_Patient_Registration" description="Patient Registration" finished-at="2022-01-12T18:09:33 IST" duration-ms="43070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- New_Patient_Registration -->
+        <test-method signature="advancereceipt()[pri:2, instance:testCases.TC_Advance_Receipt_011@5ea502e0]" started-at="2022-01-12T18:09:33 IST" name="advancereceipt" description="makeAdvanceReceipt" finished-at="2022-01-12T18:09:46 IST" duration-ms="12978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- advancereceipt -->
+        <test-method signature="verifyadvancereceipt()[pri:3, instance:testCases.TC_Advance_Receipt_011@5ea502e0]" started-at="2022-01-12T18:09:46 IST" name="verifyadvancereceipt" description="Verify created advance receipt" finished-at="2022-01-12T18:09:47 IST" duration-ms="1052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyadvancereceipt -->
+        <test-method is-config="true" signature="goToLoginpage()[pri:0, instance:testCases.TC_Advance_Receipt_011@5ea502e0]" started-at="2022-01-12T18:09:47 IST" name="goToLoginpage" finished-at="2022-01-12T18:09:50 IST" duration-ms="2621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginpage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_Advance_Receipt_011@5ea502e0]" started-at="2022-01-12T18:09:50 IST" name="tearDown" finished-at="2022-01-12T18:09:50 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_Advance_Receipt_011 -->
+    </test> <!-- test8 -->
+    <test started-at="2022-01-12T18:08:44 IST" name="test9" finished-at="2022-01-12T18:09:50 IST" duration-ms="66004">
+      <class name="testCases.TC_Advance_Receipt_Modifications_13">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:testCases.TC_Advance_Receipt_Modifications_13@5bbc9f97]" started-at="2022-01-12T18:08:44 IST" name="startApp" finished-at="2022-01-12T18:08:56 IST" duration-ms="11664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="New_Patient_Registration()[pri:1, instance:testCases.TC_Advance_Receipt_Modifications_13@5bbc9f97]" started-at="2022-01-12T18:08:56 IST" name="New_Patient_Registration" description="Patient Registration" finished-at="2022-01-12T18:09:38 IST" duration-ms="41949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- New_Patient_Registration -->
+        <test-method signature="advancereceipt()[pri:2, instance:testCases.TC_Advance_Receipt_Modifications_13@5bbc9f97]" started-at="2022-01-12T18:09:38 IST" name="advancereceipt" description="makeAdvanceReceipt" finished-at="2022-01-12T18:09:42 IST" duration-ms="3850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- advancereceipt -->
+        <test-method signature="verifyadvancereceipt()[pri:3, instance:testCases.TC_Advance_Receipt_Modifications_13@5bbc9f97]" started-at="2022-01-12T18:09:42 IST" name="verifyadvancereceipt" description="Verify created advance receipt" finished-at="2022-01-12T18:09:42 IST" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyadvancereceipt -->
+        <test-method signature="modifyAdvanceReceipt()[pri:4, instance:testCases.TC_Advance_Receipt_Modifications_13@5bbc9f97]" started-at="2022-01-12T18:09:42 IST" name="modifyAdvanceReceipt" description="Modify advance receipt" finished-at="2022-01-12T18:09:47 IST" duration-ms="4992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyAdvanceReceipt -->
+        <test-method is-config="true" signature="goToLoginpage()[pri:0, instance:testCases.TC_Advance_Receipt_Modifications_13@5bbc9f97]" started-at="2022-01-12T18:09:47 IST" name="goToLoginpage" finished-at="2022-01-12T18:09:50 IST" duration-ms="2740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginpage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_Advance_Receipt_Modifications_13@5bbc9f97]" started-at="2022-01-12T18:09:50 IST" name="tearDown" finished-at="2022-01-12T18:09:50 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_Advance_Receipt_Modifications_13 -->
+    </test> <!-- test9 -->
+    <test started-at="2022-01-12T18:08:54 IST" name="test11" finished-at="2022-01-12T18:09:58 IST" duration-ms="64734">
+      <class name="testCases.TC_MakeBillWithOtherPaymentModeForFreshPatient_17">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:testCases.TC_MakeBillWithOtherPaymentModeForFreshPatient_17@6c451c9c]" started-at="2022-01-12T18:08:54 IST" name="startApp" finished-at="2022-01-12T18:09:08 IST" duration-ms="14451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="New_Patient_Registration()[pri:1, instance:testCases.TC_MakeBillWithOtherPaymentModeForFreshPatient_17@6c451c9c]" started-at="2022-01-12T18:09:08 IST" name="New_Patient_Registration" description="Patient Registration" finished-at="2022-01-12T18:09:46 IST" duration-ms="37330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- New_Patient_Registration -->
+        <test-method signature="MakeBillwithOtherMode()[pri:2, instance:testCases.TC_MakeBillWithOtherPaymentModeForFreshPatient_17@6c451c9c]" started-at="2022-01-12T18:09:46 IST" name="MakeBillwithOtherMode" description="Make Bill with other payment mode" finished-at="2022-01-12T18:09:52 IST" duration-ms="6228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MakeBillwithOtherMode -->
+        <test-method signature="verifyBillReceiptAmount()[pri:3, instance:testCases.TC_MakeBillWithOtherPaymentModeForFreshPatient_17@6c451c9c]" started-at="2022-01-12T18:09:52 IST" name="verifyBillReceiptAmount" description="create other payment mode receipt" finished-at="2022-01-12T18:09:56 IST" duration-ms="4027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBillReceiptAmount -->
+        <test-method is-config="true" signature="goToLoginpage()[pri:0, instance:testCases.TC_MakeBillWithOtherPaymentModeForFreshPatient_17@6c451c9c]" started-at="2022-01-12T18:09:56 IST" name="goToLoginpage" finished-at="2022-01-12T18:09:58 IST" duration-ms="2559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginpage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_MakeBillWithOtherPaymentModeForFreshPatient_17@6c451c9c]" started-at="2022-01-12T18:09:58 IST" name="tearDown" finished-at="2022-01-12T18:09:58 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_MakeBillWithOtherPaymentModeForFreshPatient_17 -->
+    </test> <!-- test11 -->
   </suite> <!-- Suite -->
 </testng-results>

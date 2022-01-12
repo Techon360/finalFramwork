@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>45/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 01 11:16:30 EDT 2020</td>
+<td>Started on:</td><td>Wed Jan 12 18:05:37 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>44 seconds (44070 ms)</td>
+<tr><td>Total time:</td><td>51 seconds (51600 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,374 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.marritalstatusmatches()'><b>marritalstatusmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Marrital status is not matched expected [Married] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.RegistrationVerificationwithSameAddress.marritalstatusmatches(RegistrationVerificationwithSameAddress.java:562)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace233271622", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace233271622'><pre>java.lang.AssertionError: The following asserts failed:
+	Marrital status is not matched expected [Married] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.RegistrationVerificationwithSameAddress.marritalstatusmatches(RegistrationVerificationwithSameAddress.java:562)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.initialmatches()'><b>initialmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Intial is not matched expected [] but found [Mrs.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.RegistrationVerificationwithSameAddress.initialmatches(RegistrationVerificationwithSameAddress.java:278)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1869400026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1869400026'><pre>java.lang.AssertionError: The following asserts failed:
+	Intial is not matched expected [] but found [Mrs.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.RegistrationVerificationwithSameAddress.initialmatches(RegistrationVerificationwithSameAddress.java:278)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.groupmatches()'><b>groupmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Group is not matched expected [Eye Exam] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.RegistrationVerificationwithSameAddress.groupmatches(RegistrationVerificationwithSameAddress.java:552)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace778925754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace778925754'><pre>java.lang.AssertionError: The following asserts failed:
+	Group is not matched expected [Eye Exam] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.RegistrationVerificationwithSameAddress.groupmatches(RegistrationVerificationwithSameAddress.java:552)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.partynamematches()'><b>partynamematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Party is not matched expected [Patient] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.RegistrationVerificationwithSameAddress.partynamematches(RegistrationVerificationwithSameAddress.java:571)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace394840929", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace394840929'><pre>java.lang.AssertionError: The following asserts failed:
+	Party is not matched expected [Patient] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.RegistrationVerificationwithSameAddress.partynamematches(RegistrationVerificationwithSameAddress.java:571)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.nationalitymatches()'><b>nationalitymatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Nationality is not matched expected [Indian] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.RegistrationVerificationwithSameAddress.nationalitymatches(RegistrationVerificationwithSameAddress.java:589)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1916681239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1916681239'><pre>java.lang.AssertionError: The following asserts failed:
+	Nationality is not matched expected [Indian] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.RegistrationVerificationwithSameAddress.nationalitymatches(RegistrationVerificationwithSameAddress.java:589)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,15 +443,230 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Academy.HomePage.basePageNavigation()'><b>basePageNavigation</b><br>Test class: Academy.HomePage<br>Parameters: nonrestricteduser@qw.com, 123456, Restrcited User</td>
+<td title='testCases.RegistrationVerificationwithSameAddress.clicktotherinformaiontab()'><b>clicktotherinformaiontab</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
 <td></td>
-<td>21</td>
-<td>Academy.HomePage@7b9a4292</td></tr>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
 <tr>
-<td title='Academy.HomePage.basePageNavigation()'><b>basePageNavigation</b><br>Test class: Academy.HomePage<br>Parameters: restricteduser@qw.com, 456788, Non restricted user</td>
+<td title='testCases.RegistrationVerificationwithSameAddress.fistnamematches()'><b>fistnamematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
 <td></td>
-<td>14</td>
-<td>Academy.HomePage@7b9a4292</td></tr>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.permanentpinmatches()'><b>permanentpinmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.Viptypematches()'><b>Viptypematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.permanentareamatches()'><b>permanentareamatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.istriblematches()'><b>istriblematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.bloodgroupmatches()'><b>bloodgroupmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.occupationmatches()'><b>occupationmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.monthmatches()'><b>monthmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.permanentstatematches()'><b>permanentstatematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.localdistrictmatches()'><b>localdistrictmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.localaddressmatches()'><b>localaddressmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.adharmatches()'><b>adharmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.emailmatches()'><b>emailmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.localcitymatches()'><b>localcitymatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.disablepercentmatches()'><b>disablepercentmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.phonematches()'><b>phonematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.mothernamematches()'><b>mothernamematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.religionmatches()'><b>religionmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.sapmatches()'><b>sapmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.yearmatches()'><b>yearmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.localcountrymatches()'><b>localcountrymatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.New_Patient_Registration()'><b>New_Patient_Registration</b><br>Test class: testCases.RegistrationVerificationwithSameAddress<br>Test method: Patient Registration</td>
+<td></td>
+<td>34</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.uhidmatches()'><b>uhidmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.isbplmatches()'><b>isbplmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.emergencymatches()'><b>emergencymatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.localpinmatches()'><b>localpinmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.permanentcountrymatches()'><b>permanentcountrymatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.mobilenomatches()'><b>mobilenomatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.isvipmatches()'><b>isvipmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.permanentcitymatches()'><b>permanentcitymatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.remarksmatches()'><b>remarksmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.person_name_matches()'><b>person_name_matches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.permanentadressmatches()'><b>permanentadressmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.lastnamematches()'><b>lastnamematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.localstatematches()'><b>localstatematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.isdisablematches()'><b>isdisablematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.daymatches()'><b>daymatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.conamematches()'><b>conamematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.faxnumbermatches()'><b>faxnumbermatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.localareamatches()'><b>localareamatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.languagematches()'><b>languagematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.sourcematches()'><b>sourcematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.cotypematches()'><b>cotypematches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
+<tr>
+<td title='testCases.RegistrationVerificationwithSameAddress.passportmatches()'><b>passportmatches</b><br>Test class: testCases.RegistrationVerificationwithSameAddress</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegistrationVerificationwithSameAddress@55787112</td></tr>
 </table><p>
 </body>
 </html>

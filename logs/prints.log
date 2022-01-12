@@ -1,5 +1,31 @@
-13:19:09.004 [main] INFO  resources.Base - Restrcited User
-13:19:13.044 [main] INFO  resources.Base - Non restricted user
-13:19:20.296 [main] INFO  resources.Base - Driver is initialized
-13:19:26.182 [main] INFO  resources.Base - Navigated to Home page
-13:19:45.300 [main] INFO  resources.Base - Navigation Bar is displayed
+18:31:54.734 [main] INFO  LoginPageTest - Browser is started
+18:31:54.768 [main] INFO  LoginPageTest - Website title is verfied
+18:31:54.769 [main] DEBUG LoginPageTest - Website title is not matched
+18:31:57.810 [main] INFO  LoginPageTest - facebook title is verfied
+18:32:03.005 [main] INFO  LoginPageTest - twitter title is verfied
+18:32:06.474 [main] INFO  LoginPageTest - linkedIn title is verfied
+18:32:11.811 [main] INFO  LoginPageTest - instagram title is verfied
+18:32:32.979 [main] INFO  OpdVisitForFreshPatient - patient registration is started
+18:33:20.478 [main] INFO  VerificationtillDasboard - patient registration is started
+18:39:11.966 [TestNG-tests-4] INFO  PatientRegistration - patient registration is started
+18:39:12.536 [TestNG-tests-3] INFO  VerificationtillDasboard - patient registration is started
+18:39:12.675 [TestNG-tests-1] INFO  LoginPageTest - Browser is started
+18:39:12.698 [TestNG-tests-1] INFO  LoginPageTest - Website title is verfied
+18:39:12.698 [TestNG-tests-1] DEBUG LoginPageTest - Website title is not matched
+18:39:13.571 [TestNG-tests-5] INFO  PatientRegistrationfiledverification - patient registration is started
+18:39:13.987 [TestNG-tests-4] DEBUG PatientRegistration - user entered valid credential
+18:39:14.090 [TestNG-tests-3] DEBUG VerificationtillDasboard - user entered valid credential
+18:39:14.405 [TestNG-tests-5] DEBUG PatientRegistrationfiledverification - user entered valid credential
+18:39:14.971 [TestNG-tests-2] INFO  OpdVisitForFreshPatient - patient registration is started
+18:39:15.196 [TestNG-tests-4] DEBUG PatientRegistration - clicked on dashboard button
+18:39:15.662 [TestNG-tests-3] DEBUG VerificationtillDasboard - clicked on dashboard button
+18:39:15.874 [TestNG-tests-2] DEBUG OpdVisitForFreshPatient - user entered valid credential
+18:39:16.390 [TestNG-tests-5] DEBUG PatientRegistrationfiledverification - clicked on dashboard button
+18:39:17.115 [TestNG-tests-2] DEBUG OpdVisitForFreshPatient - clicked on dashboard button
+18:39:17.236 [TestNG-tests-4] DEBUG PatientRegistration - clicked on registration menu
+18:39:17.632 [TestNG-tests-3] DEBUG VerificationtillDasboard - clicked on registration menu
+18:39:18.212 [TestNG-tests-1] INFO  LoginPageTest - facebook title is verfied
+18:39:19.830 [TestNG-tests-5] DEBUG PatientRegistrationfiledverification - clicked on registration menu
+18:39:24.145 [TestNG-tests-1] INFO  LoginPageTest - twitter title is verfied
+18:39:27.435 [TestNG-tests-1] INFO  LoginPageTest - linkedIn title is verfied
+18:39:32.657 [TestNG-tests-1] INFO  LoginPageTest - instagram title is verfied
