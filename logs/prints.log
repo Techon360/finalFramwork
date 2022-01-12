@@ -29,3 +29,5 @@
 18:39:24.145 [TestNG-tests-1] INFO  LoginPageTest - twitter title is verfied
 18:39:27.435 [TestNG-tests-1] INFO  LoginPageTest - linkedIn title is verfied
 18:39:32.657 [TestNG-tests-1] INFO  LoginPageTest - instagram title is verfied
+18:42:23.716 [main] INFO  PatientRegistration - patient registration is started
+18:42:39.247 [main] INFO  PatientRegistrationfiledverification - patient registration is started
